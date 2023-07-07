@@ -1,8 +1,5 @@
 <template>
-  <section>
-    <nav></nav>
-    <div class="m-10"><RouterView/></div>
-  </section>
+  <article></article>
 </template>
 
 <script setup lang="ts">
