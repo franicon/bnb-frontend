@@ -1,11 +1,12 @@
 <template>
   <section>
-    <bookable-list-item/>
+    <h1 class="text-2xl font-medium">Title</h1>
+    <p class="text-lg">content</p>
   </section>
 </template>
 
 <script setup lang="ts">
-import BookableListItem from  '@/components/bookables/BookableListItem.vue'
+
 </script>
 
 <style scoped>

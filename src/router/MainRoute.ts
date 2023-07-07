@@ -6,7 +6,7 @@ const MainRoutes = {
         requiresAuth: true
     },
     redirect: '/bookings',
-    component: () => import('@/layouts/MainLayouts.ts'),
+    component: () => import('@/layouts/MainLayout.vue'),
     children: [
         {
             path: 'bookings',

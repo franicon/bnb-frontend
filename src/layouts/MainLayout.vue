@@ -1,11 +1,12 @@
 <template>
   <section>
-    <bookable-list-item/>
+    <nav></nav>
+    <div class="m-10"><RouterView/></div>
   </section>
 </template>
 
 <script setup lang="ts">
-import BookableListItem from  '@/components/bookables/BookableListItem.vue'
+
 </script>
 
 <style scoped>
