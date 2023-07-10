@@ -1,6 +1,6 @@
 <template>
   <section>
-    <bookable-list-item title="This is the title" content="This is the content"/>
+    <bookable-list-item price="2000" title="Loop City" content="A community for developers"/>
   </section>
 </template>
 
