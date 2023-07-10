@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="mb-4 shadow-sm rounded border p-4">
-      <h1 class="text-md font-[500] pb-1">{{ props.title }}</h1>
+      <h1 class="text-md font-[500]">{{ props.title }}</h1>
       <p class="text-sm">{{ props.content }}</p>
     </div>
   </section>
