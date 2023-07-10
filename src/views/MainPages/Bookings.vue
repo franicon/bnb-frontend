@@ -1,6 +1,6 @@
 <template>
   <section>
-    <bookable-list-item/>
+    <bookable-list-item title="This is the title" content="This is the content"/>
   </section>
 </template>
 
