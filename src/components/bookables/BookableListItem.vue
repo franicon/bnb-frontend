@@ -1,7 +1,9 @@
 <template>
   <section>
-    <h1 class="text-2xl font-[400]">{{props.title}}</h1>
-    <p class="text-sm">{{props.content}}</p>
+    <div class="mb-4">
+      <h1 class="text-2xl font-[400] pb-2">{{props.title}}</h1>
+      <p class="text-sm">{{props.content}}</p>
+    </div>
   </section>
 </template>
 
