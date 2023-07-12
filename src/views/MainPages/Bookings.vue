@@ -15,7 +15,14 @@ const API = import.meta.env.VITE_API_URL
 import BookableListItem from '@/components/bookables/BookableListItem.vue';
 import axios from "axios";
 
-const bookables = ref([]);
+const bookables = ref([
+  {
+    id: 1,
+    title: 'Loop City',
+    description: 'community for devs'
+  },
+
+]);
 
 onMounted(() => {
   axios.get(API)
