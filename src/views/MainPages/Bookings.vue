@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+import { ref } from "vue";
 
 import BookableListItem from  '@/components/bookables/BookableListItem.vue';
 
