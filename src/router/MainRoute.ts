@@ -9,7 +9,7 @@ const MainRoutes = {
     component: () => import('@/layouts/MainLayout.vue'),
     children: [
         {
-            path: 'bookings',
+            path: '/bookings',
             name: 'bookings',
             component: Bookings
         }
