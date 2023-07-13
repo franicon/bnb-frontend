@@ -1,4 +1,5 @@
 import Bookings from '@/views/MainPages/Bookings.vue';
+import Bookable from '@/views/MainPages/Bookable.vue';
 
 const MainRoutes = {
     path: '/',
@@ -12,6 +13,11 @@ const MainRoutes = {
             path: '/bookings',
             name: 'bookings',
             component: Bookings
+        },
+        {
+            path: '/bookings/:id',
+            name: 'bookable',
+            component: Bookable
         }
     ]
 }
