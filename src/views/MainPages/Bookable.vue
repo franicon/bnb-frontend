@@ -1,5 +1,8 @@
 <template>
-  <div>Single bookable</div>
+  <div class="grid grid-cols-2 max-w-5xl mx-auto">
+    <div>*</div>
+    <div>*</div>
+  </div>
 </template>
 
 <script setup lang="ts">
