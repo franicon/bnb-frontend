@@ -21,7 +21,7 @@
       </div>
     </template>
     <span class=" grid xl:grid-cols-3 grid-cols-1 gap-4 content-stretch">
-      <bookable-list-item v-bind="bookable" v-for="bookable in bookables" :key="bookable?.id"/>
+      <bookable-list-item v-bind="bookable" v-for="bookable in bookables" :key="bookable.id"/>
     </span>
   </section>
 </template>
@@ -33,7 +33,7 @@ const API = import.meta.env.VITE_API_URL;
 import { ref, onMounted} from "vue";
 import BookableListItem from '@/components/bookables/BookableListItem.vue';
 
-const bookables = ref([]);
+const bookables = ref();
 const loading = ref( true );
 
 onMounted(() => {
