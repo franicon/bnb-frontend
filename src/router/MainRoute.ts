@@ -6,11 +6,11 @@ const MainRoutes = {
     meta: {
         requiresAuth: true
     },
-    redirect: '/bookings',
+    redirect: '/',
     component: () => import('@/layouts/MainLayout.vue'),
     children: [
         {
-            path: '/bookings',
+            path: '/',
             name: 'bookings',
             component: Bookings,
             meta: { title: 'BookMe - Bookings' }
