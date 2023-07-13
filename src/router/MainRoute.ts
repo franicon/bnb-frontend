@@ -12,12 +12,14 @@ const MainRoutes = {
         {
             path: '/bookings',
             name: 'bookings',
-            component: Bookings
+            component: Bookings,
+            meta: { title: 'BookMe - Bookings' }
         },
         {
             path: '/bookings/:id',
             name: 'bookable',
-            component: Bookable
+            component: Bookable,
+            meta: { title: 'BookMe - Booking' }
         }
     ]
 }

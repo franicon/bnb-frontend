@@ -8,11 +8,15 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  price: {type: Number, required: true},
-  title: {type: String, required: true},
-  description: {type: String, required: true}
-})
+
+import { PropType } from "vue";
+
+interface Booking {
+  title: string
+  description: string
+  id: number
+}
+const props = defineProps<Booking>()
 </script>
 
 <style scoped>
