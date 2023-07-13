@@ -3,22 +3,7 @@
     <h1 class="pb-4 font-semibold">Top City</h1>
 
     <template v-if="loading">
-      <div class="grid grid-cols-3 gap-4">
-        <div class="" v-for="i in 6" :key="i">
-          <div class="border border-gray-200 shadow rounded-md px-5 py-5 mb-4" >
-            <div class="animate-pulse flex space-x-4">
-              <div class="flex-1 py-1">
-                <div class="space-y-3">
-                  <div class="grid grid-cols-4 gap-4">
-                    <div class="h-2 bg-gray-200 col-span-2"></div>
-                  </div>
-                  <div class="h-20 bg-gray-200"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     <Loader :num="Number(6)"/>
     </template>
     <span class=" grid xl:grid-cols-3 grid-cols-1 gap-4 content-stretch">
       <bookable-list-item v-bind="bookable" v-for="bookable in bookables" :key="bookable.id"/>
@@ -31,6 +16,8 @@ import axios from "axios";
 const API = import.meta.env.VITE_API_URL;
 
 import { ref, onMounted} from "vue";
+
+import Loader from "@/components/utils/Loader.vue";
 import BookableListItem from '@/components/bookables/BookableListItem.vue';
 
 const bookables = ref();
