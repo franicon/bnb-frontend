@@ -25,8 +25,8 @@ import Loader from "@/components/utils/Loader.vue";
 
 const route = useRoute();
 
+const bookable = ref();
 const loading = ref(true);
-const bookable = ref(null);
 
 onMounted(() => {
   axios.get(API + 'bookables/' + route.params.id).then(res => {
