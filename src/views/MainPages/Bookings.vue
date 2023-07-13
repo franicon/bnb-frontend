@@ -21,7 +21,7 @@
       </div>
     </template>
     <span class=" grid xl:grid-cols-3 grid-cols-1 gap-4 content-stretch">
-      <bookable-list-item :key="bookable.id" v-bind="bookable" v-for="bookable in bookables"/>
+      <bookable-list-item v-bind="bookable" v-for="bookable in bookables" :key="bookable.id"/>
     </span>
   </section>
 </template>
