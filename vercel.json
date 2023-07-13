@@ -1,6 +1,9 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/bookings" }
-    { "source": "/(.*)", "destination": "/bookings" }
+    { "source": "/(.*)", "destination": "/bookings" },
+    {
+      "source": "/bookings/:path*",
+      "destination": "/bookings/:path*"
+    }
   ]
 }
