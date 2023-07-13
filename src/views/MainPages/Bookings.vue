@@ -26,7 +26,7 @@ const loading = ref( true );
 onMounted(() => {
   axios.get(API + 'bookables')
       .then(res => {
-        bookables.value = res.data;
+        bookables.value = res.data.data;
         loading.value = false
       })
 });
