@@ -25,7 +25,7 @@ const bookables = ref([
 ]);
 
 onMounted(() => {
-  axios.get(API)
+  axios.get(API + 'bookables')
       .then(res => bookables.value = res.data)
 });
 </script>
