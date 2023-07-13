@@ -14,7 +14,7 @@ const route = useRoute();
 const bookable = ref( null );
 
 onMounted(() => {
-  axios.get(API + `bookables/${route.params.id}`).then(res => bookable.value = res.data)
+  axios.get(API + 'bookables/' + route.params.id).then(res => bookable.value = res.data)
 });
 
 </script>
