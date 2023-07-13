@@ -28,6 +28,7 @@ onMounted(() => {
   axios.get(API + 'bookables')
       .then(res => bookables.value = res.data)
 });
+
 </script>
 
 <style scoped>
