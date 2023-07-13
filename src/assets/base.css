@@ -15,3 +15,18 @@
     text-sm
 }
 
+.btn-gray {
+    @apply
+    text-sm
+    w-full
+    mx-auto
+    bg-gray-500
+    py-2 rounded
+    font-normal
+    text-gray-100
+    shadow-lg
+    hover:bg-gray-700
+    transition-all
+    duration-500
+}
+

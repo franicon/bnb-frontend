@@ -1,12 +1,12 @@
 <template>
   <div class="max-w-5xl mx-auto">
     <Loader :num="Number(2)" v-if="loading"/>
-    <div class="grid grid-cols-2 gap-6" v-else>
-      <div class="shadow-sm rounded border p-4 h-36">
+    <div class="grid grid-cols-6 gap-6" v-else>
+      <div class="shadow-sm rounded border p-4 h-36 col-span-3">
         <h2 class="text-2xl">{{ bookable?.title }}</h2>
         <p class="text-sm text-gray-600 pt-2">{{ bookable?.description }}</p>
       </div>
-      <div>
+      <div class="col-span-2 bg-gray-100 p-4 rounded">
         <Availability/>
       </div>
     </div>
