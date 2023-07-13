@@ -1,12 +1,14 @@
 <template>
+  <div class="max-w-5xl mx-auto">
   <Loader :num="Number(2)" v-if="loading"/>
-  <div class="grid grid-cols-2 gap-6 max-w-5xl mx-auto" v-else>
-    <div class="shadow-sm rounded border p-4 h-36">
-      <h2>{{ bookable?.title }}</h2>
-      <p class="text-sm text-gray-600 pt-2">{{ bookable?.description }}</p>
-    </div>
-    <div>
-      <h1 class="">Availability & Prices</h1>
+    <div class="grid grid-cols-2 gap-6" v-else>
+      <div class="shadow-sm rounded border p-4 h-36">
+        <h2 class="text-2xl">{{ bookable?.title }}</h2>
+        <p class="text-sm text-gray-600 pt-2">{{ bookable?.description }}</p>
+      </div>
+      <div>
+        <h1 class="">Availability & Prices</h1>
+      </div>
     </div>
   </div>
 </template>
