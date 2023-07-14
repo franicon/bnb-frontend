@@ -1,6 +1,6 @@
 <template>
   <section class="max-w-5xl mx-auto">
-    <h1 class="pb-4 font-semibold">Top City</h1>
+    <h1 class="pb-4 font-semibold">All Bookings</h1>
 
     <template v-if="loading">
      <Loader :num="Number(6)"/>

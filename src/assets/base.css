@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+    @apply
+    rounded
+    px-3 py-2
+    /*focus:ring-1*/
+    focus:outline-none
+    /*focus:ring-slate-500 */
+    placeholder-slate-400
+    focus:border-slate-400
+    border border-slate-300
+    text-sm
+}
+
+.btn-gray {
+    @apply
+    text-sm
+    w-full
+    mx-auto
+    bg-gray-500
+    py-2 rounded
+    font-normal
+    text-gray-100
+    shadow-lg
+    hover:bg-gray-700
+    transition-all
+    duration-500
+}
+
